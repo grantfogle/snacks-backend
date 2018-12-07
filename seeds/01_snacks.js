@@ -1,10 +1,10 @@
 
 exports.seed = function (knex, Promise) {
   // Deletes ALL existing entries
-  return knex('table_name').del()
+  return knex('snacks').del()
     .then(function () {
       // Inserts seed entries
-      return knex('table_name').insert([
+      return knex('snacks').insert([
         { id: 1, name: 'Steakhouse Beef Jerky', description: 'This jerky is awesome. Made from 100% beefm the only downside are the farts.', price: 7.99, img: 'https://www.jacklinks.com/wp-content/uploads/2018/04/FLAME-GRILLED-STEAKHOUSE-BEEF-JERKY-main.jpg' },
         { id: 2, name: 'Salt n Vinegar Chips', description: 'Salt and vinegar chips, seriously salty and vinegary.', price: 2.99, img: 'https://target.scene7.com/is/image/Target/GUEST_4f22154b-5b54-448f-8e53-26027dce9568?wid=488&hei=488&fmt=pjpeg' },
         { id: 3, name: 'Apple', description: 'How bout eat something healthy for once you tubster.', price: .69, img: 'https://images-na.ssl-images-amazon.com/images/I/81xQBb5jRzL._SY355_.jpg' },
